@@ -1,10 +1,10 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-const Navbar = () => {
+const NavigationBar = () => {
   return (
     <nav>
-      <ul>
+      <ul className="flex space-x-4">
         <li>
           <NavLink
             to="/"
@@ -25,7 +25,7 @@ const Navbar = () => {
             Acerca de
           </NavLink>
         </li>
-        <li>
+        {/* <li>
           <NavLink
             to="/profile"
             className={({ isActive }) =>
@@ -34,10 +34,20 @@ const Navbar = () => {
           >
             Perfil
           </NavLink>
+        </li> */}
+        <li>
+          <NavLink
+            to="/dashboard"
+            className={({ isActive }) =>
+              isActive ? "text-yellow-400 font-bold" : "text-white"
+            }
+          >
+            Dashboard
+          </NavLink>
         </li>
       </ul>
     </nav>
   );
 };
 
-export default Navbar;
+export default NavigationBar;
