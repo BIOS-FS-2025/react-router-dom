@@ -1,0 +1,8 @@
+{
+  "stats": [
+    { "id": 1, "name": "Usuarios Registrados", "value": "1,250" },
+    { "id": 2, "name": "Visitas Hoy", "value": "4,820" },
+    { "id": 3, "name": "Ingresos Mensuales", "value": "$12,345" },
+    { "id": 4, "name": "Nuevos Comentarios", "value": "87" }
+  ]
+}
