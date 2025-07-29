@@ -11,7 +11,7 @@ function DashboardStats() {
   useEffect(() => {
     const fetchStats = async () => {
       try {
-        const response = await fetch('http://localhost:3000/stat');
+        const response = await fetch(import.meta.env.VITE_API_URL);
         console.log('Se hizo la petición');
         console.log('Estas es la respuesta de la petición', response);
         if (!response.ok) {
